@@ -1,6 +1,24 @@
 {
-    "plugins\/anaclock\/plugin_info\/configuration.php": {
-        "Global param 1": "Global param 1",
-        "Global param 2": "Global param 2"
+    "plugins\/anaclock\/desktop\/php\/anaclock.php": {
+        "Mes anaclocks": "Mes anaclocks",
+        "Gestion": "Gestion",
+        "Ajouter": "Ajouter",
+        "Configuration": "Configuration",
+        "Configuration avancée": "Configuration avancée",
+        "Dupliquer": "Dupliquer",
+        "Sauvegarder": "Sauvegarder",
+        "Supprimer": "Supprimer",
+        "Equipement": "Equipement",
+        "Commandes": "Commandes",
+        "Nom de l'équipement anaclock": "Nom de l'équipement anaclock",
+        "Objet parent": "Objet parent",
+        "Aucun": "Aucun",
+        "Catégorie": "Catégorie",
+        "Activer": "Activer",
+        "Visible": "Visible",
+        "anaclock param 1": "anaclock param 1",
+        "Nom": "Nom",
+        "Type": "Type",
+        "Action": "Action"
     }
 }
