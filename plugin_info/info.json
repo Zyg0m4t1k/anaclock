@@ -1,0 +1,9 @@
+{
+	"id" : "anaclock",
+	"name" : "Horloge analogique",
+	"description" : "Plugin créant une horloge analogique",
+	"licence" : "AGPL",
+	"author" : "Jeedom Forum",
+	"require" : "3.2",
+	"category" : "monitoring"
+}
