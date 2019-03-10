@@ -93,11 +93,9 @@ class anaclock extends eqLogic {
 		  if (!is_array($replace)) {
 			  return $replace;
 		  }
+		  $this->emptyCacheWidget();
 		  $version = jeedom::versionAlias($_version);
 		  return $this->postToHtml($_version, template_replace($replace, getTemplate('core', $version, 'eqlogic', 'anaclock')));	  
-		  
-		  
-
       }
     
 

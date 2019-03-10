@@ -1,5 +1,16 @@
 <div class="eqLogic eqLogic-widget allowResize allowReorderCmd " style="border:#border#;border-radius:#border-radius#;background-color: #background-color#;color: #color#;width: #width#;height: #height#;#style#" data-eqLogic_id="#id#" data-eqLogic_uid="#uid#" data-version="#version#" >
+	<!--on charge la librairie js et css-->
+	<link rel="stylesheet" href="plugins/anaclock/3rparty/jquery-codehim-analog/css/codehim-clock.css">
+	<script src='plugins/anaclock/3rparty/jquery-codehim-analog/js/jquery.codehim.clock.js'></script>
+    <!---->
     
 	<center class="widget-name"><strong><a href="#eqLink#" style="font-size : 1.1em;#hideEqLogicName#">#name_display# <span style="font-size: 0.85em;position: relative;top:-2px;">#object_name#</span></a></strong></center>  
-      
+    <!--on crée la div pour y ajouter l'horloge-->
+    <div id="clock-place_#id#"> </div>
+    <!----------------->
+ <!--Et on lance le script -->
+<script>
+ $("#clock-place_#id#").CodehimClock();
+</script>  
+ <!------------------------------------------->    
 </div>
