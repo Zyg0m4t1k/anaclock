@@ -22,7 +22,7 @@ require_once __DIR__  . '/../../../../core/php/core.inc.php';
 class anaclock extends eqLogic {
     /*     * *************************Attributs****************************** */
 
-
+	public static $_widgetPossibility = array('custom' => true);
 
     /*     * ***********************Methode static*************************** */
 
@@ -86,10 +86,20 @@ class anaclock extends eqLogic {
 
     /*
      * Non obligatoire mais permet de modifier l'affichage du widget si vous en avez besoin
-      public function toHtml($_version = 'dashboard') {
+      */
+	  
+	  public function toHtml($_version = 'dashboard') {
+		  $replace = $this->preToHtml($_version);
+		  if (!is_array($replace)) {
+			  return $replace;
+		  }
+		  $version = jeedom::versionAlias($_version);
+		  return $this->postToHtml($_version, template_replace($replace, getTemplate('core', $version, 'eqlogic', 'anaclock')));	  
+		  
+		  
 
       }
-     */
+    
 
     /*
      * Non obligatoire mais ca permet de déclencher une action après modification de variable de configuration
